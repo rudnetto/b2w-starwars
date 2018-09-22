@@ -1,17 +1,36 @@
 import React from 'react';
+import {
+  BrowserRouter,
+  Switch,
+  Route,
+  Redirect,
+} from 'react-router-dom';
+
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+import { injectGlobal, ThemeProvider } from 'styled-components';
+
 import theme from '../../theme';
+
+import MainScreen from '../MainScreen';
 
 // eslint-disable-next-line
 injectGlobal`
   body {
-    background-color: ${theme.bgColor};
+    background-color: ${theme.defaultTheme.bgColor};
     margin: 0;
   }
 `;
 
 const App = () => (
-  <ThemeProvider theme={theme}>
-    <span>Main component!</span>
+  <ThemeProvider theme={theme.defaultTheme}>
+    <MuiThemeProvider theme={theme.muiTheme}>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/planets" component={MainScreen} />
+          <Redirect to="/planets" />
+        </Switch>
+      </BrowserRouter>
+    </MuiThemeProvider>
   </ThemeProvider>
 );
 

@@ -1,16 +1,18 @@
 import React from 'react';
-import { injectGlobal } from 'styled-components';
+import theme from '../../theme';
 
 // eslint-disable-next-line
 injectGlobal`
   body {
-    background-color: "white";
+    background-color: ${theme.bgColor};
     margin: 0;
   }
 `;
 
 const App = () => (
-  <span>Main component!</span>
+  <ThemeProvider theme={theme}>
+    <span>Main component!</span>
+  </ThemeProvider>
 );
 
 export default App;

@@ -19,9 +19,11 @@
     "eject": "react-scripts eject",
     "flow": "flow ./src",
     "flow:deps": "flow-typed install",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "check": "npm run lint && npm run flow && npm run test"
   },
   "devDependencies": {
+    "babel-eslint": "^9.0.0",
     "enzyme": "^3.6.0",
     "eslint": "^5.6.0",
     "eslint-config-airbnb": "^17.1.0",

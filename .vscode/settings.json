@@ -1,0 +1,10 @@
+{
+  "flow.pathToFlow": "${workspaceRoot}/node_modules/.bin/flow",
+  "eslint.enable": true,
+  "typescript.format.enable": false,
+  "typescript.validate.enable": false,
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "typescript.suggestionActions.enabled": false,
+  "typescript.autoImportSuggestions.enabled": false,
+  "javascript.validate.enable": false,
+}

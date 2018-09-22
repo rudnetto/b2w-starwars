@@ -11,7 +11,7 @@ import { injectGlobal, ThemeProvider } from 'styled-components';
 
 import theme from '../../theme';
 
-import MainScreen from '../MainScreen';
+import Planets from '../Planets';
 
 // eslint-disable-next-line
 injectGlobal`
@@ -26,7 +26,7 @@ const App = () => (
     <MuiThemeProvider theme={theme.muiTheme}>
       <BrowserRouter>
         <Switch>
-          <Route path="/planets" component={MainScreen} />
+          <Route path="/planets" component={Planets} />
           <Redirect to="/planets" />
         </Switch>
       </BrowserRouter>

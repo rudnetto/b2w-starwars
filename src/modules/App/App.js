@@ -7,6 +7,10 @@ import {
 } from 'react-router-dom';
 
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+
 import { injectGlobal, ThemeProvider } from 'styled-components';
 
 import theme from '../../theme';
@@ -24,6 +28,15 @@ injectGlobal`
 const App = () => (
   <ThemeProvider theme={theme.defaultTheme}>
     <MuiThemeProvider theme={theme.muiTheme}>
+
+      <AppBar position="static" color="primary">
+        <Toolbar>
+          <Typography variant="title" color="inherit">
+            Star Wars Trivia Helper
+          </Typography>
+        </Toolbar>
+      </AppBar>
+
       <BrowserRouter>
         <Switch>
           <Route path="/planets" component={Planets} />

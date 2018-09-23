@@ -15,5 +15,6 @@ module.exports = {
     'linebreak-style': 0,
     'operator-linebreak': 0,
     'react/jsx-wrap-multilines': 0,
+    'react/jsx-one-expression-per-line': 1,
   },
 };

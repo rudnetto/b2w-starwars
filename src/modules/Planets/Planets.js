@@ -7,8 +7,9 @@ import CardContent from '@material-ui/core/CardContent';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
-import Components from './Components';
-
+import Components from './components/Styled';
+import PlanetCard from './components/PlanetCard';
+import ErrorCard from './components/ErrorCard';
 import { Planet } from './Models';
 
 type State = {

@@ -31,7 +31,6 @@ const ContentContainer = styled.div`
 `;
 
 const SpinnerIcon = styled(Icon)`
-  color: ${props => props.color || '#FFFFFF'};
   animation: spin 1s infinite ease-out;
   position: absolute;
   top: 196px;

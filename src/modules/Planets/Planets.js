@@ -45,7 +45,7 @@ class Planets extends Component {
             }
             {
               this.state && this.state.fetchingData && !this.state.fetchError &&
-              <Components.SpinnerIcon color="#ffc107" style={{ fontSize: 64 }}>
+              <Components.SpinnerIcon color="primary" style={{ fontSize: 64 }}>
                 loop
               </Components.SpinnerIcon>
             }

@@ -7,4 +7,5 @@
   "typescript.suggestionActions.enabled": false,
   "typescript.autoImportSuggestions.enabled": false,
   "javascript.validate.enable": false,
+  "files.eol": "\n",
 }

@@ -16,5 +16,11 @@ module.exports = {
     'operator-linebreak': 0,
     'react/jsx-wrap-multilines': 0,
     'react/jsx-one-expression-per-line': 1,
+    'import/no-extraneous-dependencies': [ 2, {
+      devDependencies: [
+        '**/*.spec.js',
+        '**/setupTests.js'
+      ],
+    }],
   },
 };

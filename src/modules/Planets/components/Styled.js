@@ -38,7 +38,7 @@ const SpinnerIcon = styled(Icon)`
 
   @keyframes spin {
     from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
+    to {transform:rotate(-360deg);}
   }
 `;
 

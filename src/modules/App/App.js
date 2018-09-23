@@ -37,7 +37,7 @@ const App = () => (
         </Toolbar>
       </AppBar>
 
-      <BrowserRouter>
+      <BrowserRouter basename="/b2w-starwars">
         <Switch>
           <Route path="/planets" component={Planets} />
           <Redirect to="/planets" />

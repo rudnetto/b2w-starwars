@@ -315,7 +315,9 @@ ShallowWrapper {
                         </WithStyles(Typography)>
                 </WithStyles(Toolbar)>
         </WithStyles(AppBar)>
-        <BrowserRouter>
+        <BrowserRouter
+                basename="/b2w-starwars"
+        >
                 <Switch>
                         <Route
                                 component={[Function]}
@@ -352,7 +354,9 @@ ShallowWrapper {
                         </WithStyles(Typography)>
             </WithStyles(Toolbar)>
 </WithStyles(AppBar)>,
-          <BrowserRouter>
+          <BrowserRouter
+            basename="/b2w-starwars"
+>
             <Switch>
                         <Route
                                     component={[Function]}
@@ -701,6 +705,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "basename": "/b2w-starwars",
             "children": <Switch>
               <Route
                             component={[Function]}
@@ -1069,7 +1074,9 @@ ShallowWrapper {
                               </WithStyles(Typography)>
                     </WithStyles(Toolbar)>
           </WithStyles(AppBar)>
-          <BrowserRouter>
+          <BrowserRouter
+                    basename="/b2w-starwars"
+          >
                     <Switch>
                               <Route
                                         component={[Function]}
@@ -1106,7 +1113,9 @@ ShallowWrapper {
                             </WithStyles(Typography)>
               </WithStyles(Toolbar)>
 </WithStyles(AppBar)>,
-            <BrowserRouter>
+            <BrowserRouter
+              basename="/b2w-starwars"
+>
               <Switch>
                             <Route
                                           component={[Function]}
@@ -1455,6 +1464,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
+              "basename": "/b2w-starwars",
               "children": <Switch>
                 <Route
                                 component={[Function]}

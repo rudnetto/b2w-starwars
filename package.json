@@ -2,6 +2,7 @@
   "name": "desafio-b2w",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rudnetto.github.io/b2w-starwars/",
   "dependencies": {
     "@material-ui/core": "^3.1.0",
     "@material-ui/icons": "^3.0.1",
@@ -24,7 +25,9 @@
     "flow:deps": "flow-typed install",
     "lint": "eslint .",
     "check": "npm run lint && npm run flow && npm run test",
-    "check:windows": "npm run lint && npm run flow && npm run test:windows"
+    "check:windows": "npm run lint && npm run flow && npm run test:windows",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -47,6 +50,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
     "flow-bin": "^0.81.0",
-    "flow-typed": "^2.5.1"
+    "flow-typed": "^2.5.1",
+    "gh-pages": "^2.0.0"
   }
 }

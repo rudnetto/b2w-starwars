@@ -1,3 +1,5 @@
+// @flow
+
 import HttpClient from '../../utils/HttpClient';
 import Random from '../../utils/Random';
 import { Planet } from './Models';
@@ -15,10 +17,8 @@ const getRandomPlanet = async () => {
   };
 
   return planet;
-}
+};
 
 export default {
-  getRandomPlanet
-}
-
-
+  getRandomPlanet,
+};

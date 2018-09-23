@@ -1,9 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
 import { shallow } from 'enzyme';
+import App from '.';
 
-it('renders without crashing', () => {
-  const element = shallow(<App />);
-  expect(element).toMatchSnapshot();
+describe('App test suite', () => {
+  it('renders without crashing', () => {
+    const element = shallow(<App />);
+    expect(element).toMatchSnapshot();
+  });
 });

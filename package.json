@@ -15,16 +15,30 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "CI=true react-scripts test --env=jsdom",
+    "test:windows": "set CI=true && react-scripts test --env=jsdom",
+    "test:watch": "react-scripts test --env=jsdom",
+    "test:coverage": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject",
     "flow": "flow ./src",
     "flow:deps": "flow-typed install",
     "lint": "eslint .",
-    "check": "npm run lint && npm run flow && npm run test"
+    "check": "npm run lint && npm run flow && npm run test",
+    "check:windows": "npm run lint && npm run flow && npm run test:windows"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!/node_modules/",
+      "!src/index.js",
+      "!/registerServiceWorker.js"
+    ]
   },
   "devDependencies": {
     "babel-eslint": "^9.0.0",
     "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "enzyme-to-json": "^3.3.4",
     "eslint": "^5.6.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-compat": "^2.5.1",
@@ -33,7 +47,6 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
     "flow-bin": "^0.81.0",
-    "flow-typed": "^2.5.1",
-    "jest": "^23.6.0"
+    "flow-typed": "^2.5.1"
   }
 }

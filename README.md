@@ -1,5 +1,7 @@
 # Star Wars Challenge
 
+[![CircleCI branch](https://img.shields.io/circleci/project/github/rudnetto/b2w-starwars/master.svg?style=flat-square)](https://circleci.com/gh/rudnetto/b2w-starwars)
+
 A React app that consumes Star Wars planet's data from [SWAPI](https://swapi.co/) and helps as a cheat sheet on trivia games!
 B2W front-end developer challenge, made with:
 
